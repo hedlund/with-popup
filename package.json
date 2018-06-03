@@ -1,0 +1,31 @@
+{
+  "name": "@hedlund/with-popup",
+  "version": "0.1.0",
+  "description": "A small React High-Order Component to handle popups within applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedlund/with-popup.git"
+  },
+  "keywords": [
+    "react",
+    "popup",
+    "dialog",
+    "alert",
+    "high-order",
+    "component"
+  ],
+  "author": "Henrik Hedlund <henrik@hedlund.im>",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/hedlund/with-popup/issues"
+  },
+  "homepage": "https://github.com/hedlund/with-popup#readme",
+  "devDependencies": {
+    "rollup": "^0.59.4"
+  }
+}
