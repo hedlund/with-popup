@@ -1,9 +1,11 @@
 {
   "name": "@hedlund/with-popup",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A small React High-Order Component to handle popups within applications.",
-  "main": "index.js",
+  "main": "dist/bundle.js",
+  "module": "dist/index.js",
   "scripts": {
+    "build": "rollup -c && babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,8 +17,8 @@
     "popup",
     "dialog",
     "alert",
-    "high-order",
-    "component"
+    "modal",
+    "high-order component"
   ],
   "author": "Henrik Hedlund <henrik@hedlund.im>",
   "license": "MIT",
@@ -26,6 +28,18 @@
   },
   "homepage": "https://github.com/hedlund/with-popup#readme",
   "devDependencies": {
-    "rollup": "^0.59.4"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.0",
+    "rollup": "^0.59.4",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "peerDependencies": {
+    "react": "16+"
   }
 }
